@@ -1,34 +1,49 @@
-# Flask & PostgreSQL Docker Demo
+# TodoListDemo-Dockerized
 
-This project demonstrates how to containerize a Flask application and a PostgreSQL database using Docker and Docker Compose.
+A simple, Dockerized Flask application for managing a task list, demonstrating the integration of Flask with PostgreSQL within Docker containers.
 
-## Project Structure
+## Features
 
-Briefly describe the project structure and the role of each component.
+- View a list of tasks.
+- Add new tasks to the list.
 
-## Getting Started
-
-### Prerequisites
+## Prerequisites
 
 - Docker
 - Docker Compose
 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
 ### Installation
 
-Instructions on how to clone the repository and set up the project.
-
-### Running the Application
-
-docker-compose up --build
+1. Clone the repository: ```git clone https://github.com/behradmoeini/TodoListDemo-Dockerized.git```
+2. Navigate to the project directory: ```cd TodoListDemo-Dockerized```
+3. Build and start the containers: ```docker-compose up --build```
 
 
-Explain how to access the application and any additional setup steps (e.g., initializing the database).
+### Accessing the Application
 
-## Contributing
+After starting the containers, access the task list application by navigating to `http://localhost:5000` in your web browser.
 
-Encourage contributions and detail the process for submitting pull requests.
+## Adding Tasks
 
-## License
+To add a task, simply:
+1. Enter the task in the input field on the homepage.
+2. Click the "Add Task" button.
 
-Specify the license under which the project is released.
+The new task will be displayed in the list on the main page.
 
+## Technology Stack
+
+- **Frontend**: HTML rendered through Flask
+- **Backend**: Flask (Python)
+- **Database**: PostgreSQL
+- **Containerization**: Docker, Docker Compose
+
+## Acknowledgments
+
+- Flask, for the minimalist Python web framework.
+- PostgreSQL, for the open-source relational database.
+- Docker, for simplifying deployment.
