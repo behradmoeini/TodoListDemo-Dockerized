@@ -42,7 +42,7 @@ def add_greeting():
     conn.commit()
     cur.close()
     conn.close()
-    return 'Greeting added successfully! <a href="/">Go back to the list.</a>'
+    return 'Task added successfully! <a href="/">Go back to the list.</a>'
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
