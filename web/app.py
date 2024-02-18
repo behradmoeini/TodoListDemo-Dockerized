@@ -29,7 +29,7 @@ def index():
         <h2>Add a New Task</h2>
         <form action="/add" method="post">
             <input type="text" name="message" required>
-            <input type="submit" value="Add Greeting">
+            <input type="submit" value="Add Task">
         </form>
     """, greetings_html=greetings_html)
 
